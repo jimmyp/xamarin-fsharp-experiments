@@ -12,7 +12,7 @@ type AppDelegate () =
 
     override this.FinishedLaunching (app, options) =
         Forms.Init()
-        this.LoadApplication (new ${AppName}.App())
+        this.LoadApplication (new testfsharp.App())
         base.FinishedLaunching(app, options)
 
 module Main =
