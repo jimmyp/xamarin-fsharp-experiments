@@ -21,10 +21,10 @@ namespace testfsharp.Droid
     #nowarn "51" // address-of operator can occur in the code
     #nowarn "1183" // unused 'this' reference
     
-    exception ReturnException3011928be0fc433090165d6efd255165 of obj
-    exception ReturnNoneException3011928be0fc433090165d6efd255165
+    exception ReturnException182c2b979a334016992fb842b92d65c0 of obj
+    exception ReturnNoneException182c2b979a334016992fb842b92d65c0
     [<AutoOpen>]
-    module FuncConvertFinalOverload3011928be0fc433090165d6efd255165 =
+    module FuncConvertFinalOverload182c2b979a334016992fb842b92d65c0 =
       // This extension member adds to the FuncConvert type and is the last resort member in the method overloading rules. 
       type global.Microsoft.FSharp.Core.FuncConvert with
           /// A utility function to convert function values from tupled to curried form
@@ -37,10 +37,10 @@ namespace testfsharp.Droid
             static do Android.Runtime.ResourceIdManager.UpdateIdValues()
             (* Member of type 'CodeTypeConstructor' is not supported by the CodeDOM provider and was omitted *)
             static member UpdateIdValues  () =
-                global.PCLStorage.Resource.String.ApplicationName <- Resource.String.ApplicationName
-                global.PCLStorage.Resource.String.Hello <- Resource.String.Hello
-                global.PCLCrypto.Resource.String.ApplicationName <- Resource.String.ApplicationName
-                global.PCLCrypto.Resource.String.Hello <- Resource.String.Hello
+                global.PCLStorage.Resource.String.ApplicationName <- Resource_String.ApplicationName
+                global.PCLStorage.Resource.String.Hello <- Resource_String.Hello
+                global.PCLCrypto.Resource.String.ApplicationName <- Resource_String.ApplicationName
+                global.PCLCrypto.Resource.String.Hello <- Resource_String.Hello
 
 
     
@@ -58,5 +58,18 @@ namespace testfsharp.Droid
             static do Android.Runtime.ResourceIdManager.UpdateIdValues()
             // aapt resource value: 0x7f020000
             static member icon = 2130837504
+            (* Member of type 'CodeTypeConstructor' is not supported by the CodeDOM provider and was omitted *)
+
+
+    
+    and
+        
+        (* partial *)Resource_String () =
+            static do Android.Runtime.ResourceIdManager.UpdateIdValues()
+            // aapt resource value: 0x7f030001
+            static member ApplicationName = 2130903041
+            
+            // aapt resource value: 0x7f030000
+            static member Hello = 2130903040
             (* Member of type 'CodeTypeConstructor' is not supported by the CodeDOM provider and was omitted *)
 
