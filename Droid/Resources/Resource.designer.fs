@@ -21,10 +21,10 @@ namespace testfsharp.Droid
     #nowarn "51" // address-of operator can occur in the code
     #nowarn "1183" // unused 'this' reference
     
-    exception ReturnExceptionccf3649009b74041b6999212c45e00c2 of obj
-    exception ReturnNoneExceptionccf3649009b74041b6999212c45e00c2
+    exception ReturnException3011928be0fc433090165d6efd255165 of obj
+    exception ReturnNoneException3011928be0fc433090165d6efd255165
     [<AutoOpen>]
-    module FuncConvertFinalOverloadccf3649009b74041b6999212c45e00c2 =
+    module FuncConvertFinalOverload3011928be0fc433090165d6efd255165 =
       // This extension member adds to the FuncConvert type and is the last resort member in the method overloading rules. 
       type global.Microsoft.FSharp.Core.FuncConvert with
           /// A utility function to convert function values from tupled to curried form
@@ -37,7 +37,10 @@ namespace testfsharp.Droid
             static do Android.Runtime.ResourceIdManager.UpdateIdValues()
             (* Member of type 'CodeTypeConstructor' is not supported by the CodeDOM provider and was omitted *)
             static member UpdateIdValues  () =
-                ()
+                global.PCLStorage.Resource.String.ApplicationName <- Resource.String.ApplicationName
+                global.PCLStorage.Resource.String.Hello <- Resource.String.Hello
+                global.PCLCrypto.Resource.String.ApplicationName <- Resource.String.ApplicationName
+                global.PCLCrypto.Resource.String.Hello <- Resource.String.Hello
 
 
     

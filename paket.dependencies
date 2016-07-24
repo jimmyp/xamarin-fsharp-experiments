@@ -1,0 +1,8 @@
+source https://nuget.org/api/v2
+
+nuget Castle.Windsor-log4net >= 3.2
+nuget NUnit
+nuget FSharp.AWS.DynamoDB prerelease beta
+nuget PCLCrypto
+
+github forki/FsUnit FsUnit.fs

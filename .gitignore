@@ -38,3 +38,6 @@ Thumbs.db
 
 #dotCover
 *.dotCover
+
+#packages
+.paket/paket.exe
